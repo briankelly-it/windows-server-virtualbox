@@ -89,10 +89,17 @@ This tutorial outlines the steps to create a virtual machine running Windows Ser
 <br />
 <h2>Next Steps...</h2>
 
-<p>Now that Windows is installed, all that's left is some configuration settings (keyboard, user account, time, etc.) that Windows will walk you through. Enjoy your new Windows VM!</p>
-<img src="https://i.imgur.com/AIbM7cz.png" width="50%" alt="Media Creation Tool download"/>
+<p>After the VM restarts, it will ask you for a password. Enter a password for your Administrator account that you will use to login with and click Finish.</p>
+<img src="https://i.imgur.com/kGI2tmk.png" width="50%" alt="Media Creation Tool download"/>
+
+<p>In order to login you might need to press Ctrl+Alt+Del, but this won't work because your PC will take the input instead of the VM. To get around this, VirtualBox has an "Input" menu allowing you to do actions such as this.</p>
+
+<p>At the top of the VirtualBox window, click Input > Keyboard > Insert Ctrl+Alt+Del.</p>
+<img src="https://i.imgur.com/MRfBcsd.png" width="80%" alt="Media Creation Tool download"/>
+
+<p>Now you can login and enjoy Windows Server 2016!</p>
 
 <h3>Related Tutorials</h3>
 
-- [Installing Windows Server within VirtualBox](https://github.com/briankelly-it/windows-server-virtualbox)
+- [Installing Windows 10 within VirtualBox](https://github.com/briankelly-it/windows-10-virtualbox)
 - [Installing and Configuring Active Directory](https://github.com/briankelly-it/configure-active-directory)
