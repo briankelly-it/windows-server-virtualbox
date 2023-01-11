@@ -42,16 +42,16 @@ This tutorial outlines the steps to create a virtual machine running Windows Ser
 <p>This will open the "Create Virtual Machine" dialog in Guided Mode. In the <a href="https://github.com/briankelly-it/windows-10-virtualbox">Windows 10 Tutorial</a> we used Guided Mode but this time we will use Expert Mode which allows use to create VMs a little quicker having all the settings on one screen. Click "Expert Mode" at the bottom.</p>
 <img src="https://i.imgur.com/JiYI6BJ.png" width="70%" alt="Media Creation Tool download"/>
 
-<p>Name your VM whatever you like, then move onto the "Hardware" and "Hard Disk" sections. For Hardware I recommend increasing the defaults to 4GB (4096) and 2 CPUs for a little more performance. Also I inrease Just know that the VM will use YOUR PC's resources so whatever the VM is using, the PC will not be able to use.</p>
+<p>Name your VM whatever you like, then move onto the "Hardware" and "Hard Disk" sections. For Hardware I recommend increasing the defaults to 4GB (4096) and 2 CPUs for a little more performance. Also I increase the hard disk size to 60GB but this isn't completely necessary if you don't have the extra sapce. Just know that the VM will use YOUR PC's resources so whatever the VM is using, the PC will not be able to use.</p>
 
 <img src="https://i.imgur.com/vo6UiBy.png" width="49%" alt="Media Creation Tool download"/>
 <img src="https://i.imgur.com/BQBXm4t.png" width="49%" alt="Media Creation Tool download"/>
 <img src="https://i.imgur.com/9yeRl7t.png" width="49%" alt="Media Creation Tool download"/>
 
-<p>Once you have made all of these selections you can click "Create" to make the Hard Disk.</p>
+<p>Once you have made all of these selections you can click "Finish" to create the VM.</p>
 
 <br /> 
-<h2>Step 3: Install Windows on the VM</h2>
+<h2>Step 3: Install Windows Server on the VM</h2>
 
 <p>In order to install Windows on the VM, we need to <b>mount</b> the ISO file. This is no different than inserting a USB or a CD-ROM with Windows into your computer. First, select the VM you just created on the left and click "Settings" as shown below:</p>
 <img src="https://i.imgur.com/Xb0T0cR.png" width="50%" alt="Media Creation Tool download"/>
@@ -66,20 +66,25 @@ This tutorial outlines the steps to create a virtual machine running Windows Ser
 <img src="https://i.imgur.com/67Bk04p.png" width="50%" alt="Media Creation Tool download"/>
 
 <p>After the VM starts up, click next on the first Windows Setup screen to proceed, then "Install Now".</p>
-<img src="https://i.imgur.com/CuCDusl.png" width="70%" alt="Media Creation Tool download"/>
+<img src="https://i.imgur.com/C7M9r2h.png" width="70%" alt="Media Creation Tool download"/>
 
-<p>On the next screen you will be asked to enter your license key. If you don't have one, you can proceed with an evaluation installation by clicking "I don't have a product key".</p>
-<img src="https://i.imgur.com/MXHHUYe.png" width="50%" alt="Media Creation Tool download"/>
+<p>On the next screen you will be asked to select the operating system you want to install. Here is an overview of the different versions you could install:</p>
 
-<p>Next you need to select the operating system that you want to install and click Next. I tend to choose the Pro edition because it offers more features. After you've made your selection, accept the license terms on the next screen and click Next</p>
-<img src="https://i.imgur.com/MKwt15j.png" width="50%" alt="Media Creation Tool download"/>
+- <b>Standard</b> - The standard version of Windows Server is designed for small businesses.
+- <b>Datacenter</b> - This is designed for big business and large data center deployments.
+- <b>Desktop Experience</b> - The desktop experience is the MOST commonly installed version of Windows Server.
+- <b>Server Core</b> - This is a command-line version only. You install it by selecting anything other than "(Desktop Experience)".
 
-<p>Click on the "Custom: Install Windows Only (advanced)" since this is a fresh installation of Windows. On
-the next screen select the drive you wish to install Windows 10 on (there should only be one, the virtual drive created during the VM creation step) and click Next to begin the installation.</p>
+<p>For this tutorial you will want to make sure you install the "Desktop Experience". It doesn't matter if you chose Standard or Data center. That is entirely up to you.</p>
+<img src="https://i.imgur.com/k5Dgean.png" width="50%" alt="Media Creation Tool download"/>
+
+<p>Click Next, and on the next screen accept the license terms and click Next again.</p>
+
+<p>Click on the "Custom: Install Windows Only (advanced)" since this is a fresh installation of Windows. On the next screen select the drive you wish to install Windows Server on (there should only be one, the virtual drive created during the VM creation step) and click Next to begin the installation.</p>
 <img src="https://i.imgur.com/Puut87l.png" width="50%" alt="Media Creation Tool download"/>
 <img src="https://i.imgur.com/rNPbdyg.png" width="50%" alt="Media Creation Tool download"/>
 
-<p>Congrats! You've successfully installed Windows 10 on a VirtualBox VM.</p>
+<p>Congrats! You've successfully installed Windows Server 2016 on a VirtualBox VM.</p>
 
 <br />
 <h2>Next Steps...</h2>
